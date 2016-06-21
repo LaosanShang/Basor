@@ -1,0 +1,20 @@
+﻿body {
+}
+
+.nav{float:right;}
+.nav li{
+    list-style:none;
+    float:left;
+    padding:30px;
+}
+
+.nav li a{
+    list-style:none;
+    float:left;
+    padding:30px;
+    font-size:large;
+}
+.logo a{
+    padding:30px;
+    font-size:larger;
+}

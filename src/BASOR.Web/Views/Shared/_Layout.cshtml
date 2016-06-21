@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <script src="~/Scripts/jquery-2.1.4.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/base.css" rel="stylesheet" />
+    <link href="~/Content/index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2">
+            <i class="logo">
+                <a>LOGO</a>
+            </i>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-7">
+            <div class="nav">
+                <ul>
+                    <li><a href="#">主页</a></li>
+                    <li><a href="#">产品</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
