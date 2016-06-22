@@ -6,33 +6,65 @@
     <title>@ViewBag.Title</title>
     <script src="~/Scripts/jquery-2.1.4.js"></script>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
     <link href="~/Content/base.css" rel="stylesheet" />
-    <link href="~/Content/index.css" rel="stylesheet" />
+    <link href="~/Content/buttons.css" rel="stylesheet" />
+    @RenderSection("head")
 </head>
 <body>
-    <div class="row"></div>
-    <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-2">
-            <i class="logo">
-                <a>LOGO</a>
-            </i>
+    <div class="row header"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-1">
+                <span class="logo">
+                    <a href="@Url.Action("Index","Home")"><img src="../Content/Images/logo.png" /></a>
+                </span>
+            </div>
+            <div class="col-lg-9">
+                <div class="nav">
+                    <ul>
+                        <li>@Html.ActionLink("主页", "Index", "Home")</li>
+                        <li>@Html.ActionLink("产品中心", "Index")</li>
+                        <li>@Html.ActionLink("解决方案", "Index")</li>
+                        <li>@Html.ActionLink("新闻中心", "Index")</li>
+                        <li>@Html.ActionLink("关于我们", "Index")</li>
+                        <li>@Html.ActionLink("联系我们", "Index")</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
         </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-7">
-            <div class="nav">
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <div class="footer container">
+        <div class="row">
+            <div class="col-lg-12">
                 <ul>
-                    <li><a href="#">主页</a></li>
-                    <li><a href="#">产品</a></li>
-                    <li><a href="#">关于我们</a></li>
-                    <li><a href="#">联系我们</a></li>
+                    <li>@Html.ActionLink("主页", "Index", "Home")</li>
+                    <li>@Html.ActionLink("产品中心", "Index")</li>
+                    <li>@Html.ActionLink("解决方案", "Index")</li>
+                    <li>@Html.ActionLink("新闻中心", "Index")</li>
+                    <li>@Html.ActionLink("关于我们", "Index")</li>
+                    <li style="border-right-width:0px">@Html.ActionLink("联系我们", "Index")</li>
                 </ul>
             </div>
         </div>
-        <div class="col-lg-1"></div>
-    </div>
-    <div>
-        @RenderBody()
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="copyright">Copyright© 2016 NantongBasor Technology Co., Ltd.All rights reserved.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="copyright">Design&nbsp;And&nbsp;Develop&nbsp;by&nbsp;:&nbsp;CharlesShang</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

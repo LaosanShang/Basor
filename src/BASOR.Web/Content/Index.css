@@ -1,20 +1,55 @@
-﻿body {
+﻿.slider{
+    height:450px;
+    background:#FFF;
+    background-image:url(Images/slider-bg.png);
+    background-repeat:no-repeat;
+    overflow:hidden;
+    margin:0;
 }
 
-.nav{float:right;}
-.nav li{
-    list-style:none;
-    float:left;
-    padding:30px;
+.swipe-title{
+    height:300px;
+    padding:10px;
+}
+.swipe-title .content{
+    border:1px solid #eee;
+    height:300px;
+    padding:10px;
+    background:#fefefe;
+}
+.swipe-title .content:hover{
+    border:1px solid #00923f;
+}
+.domain{height:350px;}
+.domain .content{height:350px;}
+.domain .button{margin-top:10px;}
+.domain:hover .domain-icon{background:url(../Resources/Images/water.png) no-repeat -100px 0px;}
+.domain-icon{background:url(../Resources/Images/water.png) no-repeat 0px 0px; height:100px; width:100px;margin:10px auto;}
+.content-img{
+    height:160px;
+    text-align:center;  
+    margin:2px auto;
+}
+.content-img img{
+    height:160px;
+    width:160px;
+}
+.caption{
+    text-align:center;
+}
+.caption-des-en{
+    font-weight:bold;
+    color:#00923f;
+    font-size:.8em;
+    font-family:'webfont','Microsoft YaHei';
 }
 
-.nav li a{
-    list-style:none;
-    float:left;
-    padding:30px;
-    font-size:large;
-}
-.logo a{
-    padding:30px;
-    font-size:larger;
-}
+
+
+p{margin:0;}
+.aboutus-text{padding:0 30px 0 0; border-right:1px #eee solid;}
+.news{height:180px;}
+.news ul{padding-left:0;}
+.news li{list-style:none;}
+.news a{text-decoration:none;color:#333;}
+.news a:hover{text-decoration:underline;}

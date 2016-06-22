@@ -1,5 +1,130 @@
 ﻿@{
     ViewBag.Title = "主页";
 }
+@section head{
+    <link href="~/Content/index.css" rel="stylesheet" />
+}
 
+<div class="row slider">
+</div>
+
+<!--产品分类-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 swipe-title domain">
+            <div class="content">
+                <div class="domain-icon"></div>
+                <h1 class="caption">供水</h1>
+                <h3 class="caption">供水士大夫士大夫大师傅士大士大夫十分分散夫</h3>
+                <h4 class="caption"><a class="button button-action">了解更多</a></h4>
+            </div>
+        </div>
+        <div class="col-lg-4 swipe-title domain">
+            <div class="content">
+                <div class="domain-icon"></div>
+                <h1 class="caption">供水</h1>
+                <h3 class="caption">供水士大夫士大夫大师傅士大士大夫十分分散夫</h3>
+                <h4 class="caption"><a class="button button-action">了解更多</a></h4>
+            </div>
+        </div>
+        <div class="col-lg-4 swipe-title domain">
+            <div class="content">
+                <div class="domain-icon"></div>
+                <h1 class="caption">供水</h1>
+                <h3 class="caption">供水士大夫士大夫大师傅士大士大夫十分分散夫</h3>
+                <h4 class="caption"><a class="button button-action">了解更多</a></h4>
+            </div>
+        </div>
+    </div>
+</div>
+@*产品列表*@
+<div class="container">
+    <h3 class="title">产品展示</h3>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 swipe-title">
+            <div class="content">
+                <div class="content-img">
+                    <img src="../Resources/Images/Products/product1.png" />
+                </div>
+                <div class="caption">
+                    <h4>生物智能蒸汽发生器</h4>
+                    <h6 class="caption-des-en">Inteligent&nbsp;biomass&nbsp;steam&nbsp;generator</h6>
+                    <h4><a class="button button-action">了解更多</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 swipe-title">
+            <div class="content">
+                <div class="content-img">
+                    <img src="../Resources/Images/Products/product2.png" />
+                </div>
+                <div class="caption">
+                    <h4>纯木质颗粒热水锅炉</h4>
+                    <h6 class="caption-des-en">Wood&nbsp;pellets&nbsp;hot&nbsp;water&nbsp;boiler</h6>
+                    <h4><a class="button button-action">了解更多</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 swipe-title">
+            <div class="content">
+                <div class="content-img">
+                    <img src="../Resources/Images/Products/product3.png" />
+                </div>
+                <div class="caption">
+                    <h4>纯木质颗粒热水锅炉</h4>
+                    <h6 class="caption-des-en">Wood&nbsp;pellets&nbsp;hot&nbsp;water&nbsp;boiler</h6>
+                    <h4><a class="button button-action">了解更多</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 swipe-title">
+            <div class="content">
+                <div class="content-img">
+                    <img src="../Resources/Images/Products/product4.png" />
+                </div>
+                <div class="caption">
+                    <h4>纯木质颗粒热水锅炉</h4>
+                    <h6 class="caption-des-en">Wood&nbsp;pellets&nbsp;hot&nbsp;water&nbsp;boiler</h6>
+                    <h4><a class="button button-action">了解更多</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*关于我们*@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <h3 class="title">关于我们</h3>
+            <img width="100%" src="../Resources/Images/company.png" />
+        </div>
+        <div class="col-lg-6">
+            <h3 class="title">&nbsp;</h3>
+            <div class="aboutus-text">
+                <p>
+                    南通百胜能源科技有限公司是一家集生产、研发、销售为一体的高新技术企业。主要生产节能生物质热能设备。公司目前拥有多家生物质颗粒厂，年产生物质颗粒上万吨。生物质热能设备厂的建立，是公司完善生物质产业链的重要步骤，是公司迈向集团化的重要布局。
+                    目前市场上所有用到热汽、热风、热水、热能的生产型企业都可以进行节能改造。原先我们用的燃油、燃气、燃电、燃煤等锅炉，都可以替换为生物质能源。费用成本节约50%！
+                </p>
+                <p>南通能源科技有限公司秉承“让中国的蓝天没有雾霾”的企业使命，为市场上的客户做最优质的产品和服务。真正为客户创造价值，节约成本。百胜人奉行“追求卓越、以人为本”的原则，不断开拓创新，为市场带来新的推动。</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <h3 class="title">行业动态</h3>
+            <div class="news">
+                <ul>
+                    <li>@Html.ActionLink("行业动态xxxx1", "Index")</li>
+                    <li>@Html.ActionLink("行业动态xxxx2", "Index")</li>
+                    <li>@Html.ActionLink("行业动态xxxx3", "Index")</li>
+                    <li>@Html.ActionLink("行业动态xxxx4", "Index")</li>
+                    <li>@Html.ActionLink("行业动态xxxx5", "Index")</li>
+                    <li>@Html.ActionLink("行业动态xxxx6", "Index")</li>
+                    <li>@Html.ActionLink("行业动态xxxx4", "Index")</li>
+                    <li>@Html.ActionLink("行业动态xxxx5", "Index")</li>
+                    <li>@Html.ActionLink("行业动态xxxx6", "Index")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
